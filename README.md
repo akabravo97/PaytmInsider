@@ -3,7 +3,8 @@
 [![Assingment badge](https://img.shields.io/badge/Paytm%20Insider-1.0.0-yellowgreen)](https://insider.in/)
 
 
-This application fetches best experiences happening out there in your city using [Insider Homepage API].
+This application fetches best experiences happening out there in your city using [Insider Homepage API](https://api.insider.in/home?norm=1&filterBy=go-out&city=mumbai
+).
 
 [![Assingment badge](https://j.gifs.com/gZ915k.gif)](https://insider.in/)
 
