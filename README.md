@@ -6,7 +6,7 @@ This application fetches best experiences happening out there in your city using
 
 [![Assingment badge](https://j.gifs.com/gZ915k.gif)](https://insider.in/)
 
-> Note: I have also added neccesary comments in neccesary classes and methods.
+> Note:  Neccesary comments are also added in classes and methods.
 
 ### Download Link 
 [Download Insider](https://drive.google.com/file/d/1it4D6ZsgxNj-PEVbItp7yBfD2BTxvDOQ/view?usp=sharing)
