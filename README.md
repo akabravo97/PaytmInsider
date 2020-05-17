@@ -3,8 +3,7 @@
 [![Assingment badge](https://img.shields.io/badge/Paytm%20Insider-1.0.0-yellowgreen)](https://insider.in/)
 
 
-This application fetches best experiences happening out there in your city using [Insider Homepage API](https://api.insider.in/home?norm=1&filterBy=go-out&city=mumbai
-).
+This application fetches best experiences happening out there in your city using [Insider Homepage API](https://api.insider.in/home?norm=1&filterBy=go-out&city=mumbai).
 
 [![Assingment badge](https://j.gifs.com/gZ915k.gif)](https://insider.in/)
 
@@ -14,6 +13,7 @@ This application fetches best experiences happening out there in your city using
   - Subscribe or Unsubscribe from events
   - Sort events by popularity,featuring, price, date
   - Get notified before event starts
+  - Works well without internet access by caching event data as well as image resources too.
 
 ## Architecture
 It is based on MVVM architecture which has been recommended by Google. It is largely based on principle of
@@ -26,6 +26,13 @@ It is based on MVVM architecture which has been recommended by Google. It is lar
 The implementation of above architecture is done in following manner,
 
 ![MVVM Image](https://i.ibb.co/0Y0sM5N/mvvm-this-app.jpg)]
+
+The local cache is implemented in following manner,
+
+![MVVM Image](https://i.ibb.co/C5V2Dc8/er.jpg)]
+
+```events``` table consists of all the event that was inserted from API into cache.
+```event_user``` consists of events that were subscribed by current user.
 
 ### Tech Stack
 
