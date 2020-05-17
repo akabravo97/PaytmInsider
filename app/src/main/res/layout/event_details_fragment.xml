@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event_details_background"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/imageEventDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/event_activity_gradient"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subscribe_round_button"
+        android:padding="15dp"
+        android:text="Subscribe"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/imageEventDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEventDetails"
+        app:layout_constraintVertical_bias="1.0"
+        android:alpha="0.8"></Button>
+
+    <TextView
+        android:id="@+id/eventDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#545252"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/eventDetailVenueName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEventDetails"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/eventDetailVenueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#545252"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/eventDetailStartTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventDetailName" />
+
+    <TextView
+        android:id="@+id/eventDetailStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#545252"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/popularityRatingText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventDetailVenueName" />
+
+    <TextView
+        android:id="@+id/popularityRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:elevation="10dp"
+        android:text="Popularity Score"
+        android:textColor="#545252"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/popularityRatingBar"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventDetailStartTime" />
+
+    <RatingBar
+        android:id="@+id/popularityRatingBar"
+        style="@style/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:numStars="5"
+        app:layout_constraintBottom_toBottomOf="@+id/popularityRatingText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popularityRatingText"
+        app:layout_constraintTop_toTopOf="@+id/popularityRatingText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/backButtonEventDetails"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageEventDetails"
+        app:layout_constraintEnd_toStartOf="@+id/imageEventDetails"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/event_details_back_button"/>
+
+    <ImageView
+        android:id="@+id/eventMetaDataBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEventDetails"
+        android:background="@drawable/eventmetadataback"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

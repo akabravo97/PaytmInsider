@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Paytm Insider</string>
+    <string name="select_your_city">Select Your City</string>
+    <string name="rupeesSymbol">₹</string>
+
+    <string-array name="event_type">
+        <item>Popular</item>
+        <item>Featured</item>
+    </string-array>
+
+    <string-array name="sort_type">
+        <item>Popularity</item>
+        <item>Price</item>
+        <item>Date</item>
+    </string-array>
+
+    <string-array name="sort_method">
+        <item>Descending</item>
+        <item>Ascending</item>
+    </string-array>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="event_subscription_sucess_snackbar">You are now subscribed to the event</string>
+    <string name="event_unsubscription_success_snackbar">Unsubscribed from the event</string>
+    <string name="event_subscription_undo_snackbar_button">UNDO</string>
+    <string name="event_subscription_undo_snackbar">UNDO</string>
+    <string name="no_subscription_snackbar">Wow! Such empty. Subscribe to events from live event section.</string>
+    <string name="unsubscribe_button_text">UNSUBSCRIBE</string>
+    <string name="subscribe_button_text">SUBSCRIBE</string>
+    <string name="price_free_event">Free</string>
+    <string name="hyd_city_transition">hydCityTransition</string>
+    <string name="mum_city_transition">mumCityTransition</string>
+    <string name="del_city_transition">delCityTransition</string>
+    <string name="delhi_city_name">delhi</string>
+    <string name="mumbai_city_name">mumbai</string>
+    <string name="hyd_city_name">hyderabad</string>
+    <string name="cached_proceed_warning">. Proceed with cached items ?</string>
+
+</resources>

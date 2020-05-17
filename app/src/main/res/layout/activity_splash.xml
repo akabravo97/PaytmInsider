@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cityactivitybackground"
+    tools:context=".ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/delhiImageView"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:transitionName="delCityTransition"
+        app:layout_constraintBottom_toTopOf="@+id/insiderTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mumbaiImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/delhi" />
+
+    <ImageView
+        android:id="@+id/mumbaiImageView"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:padding="0dp"
+        android:transitionName="mumCityTransition"
+        app:layout_constraintBottom_toTopOf="@+id/insiderTextView"
+        app:layout_constraintEnd_toStartOf="@+id/delhiImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hydImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mumbai" />
+
+    <ImageView
+        android:id="@+id/hydImageView"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:transitionName="hydCityTransition"
+        app:layout_constraintBottom_toTopOf="@+id/insiderTextView"
+        app:layout_constraintEnd_toStartOf="@+id/mumbaiImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hyderabad" />
+
+    <TextView
+        android:id="@+id/insiderTextView"
+        android:layout_width="185dp"
+        android:layout_height="72dp"
+        android:fontFamily="sans-serif-black"
+        android:text="INSIDER"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delhiImageView"
+        app:layout_constraintVertical_bias="0.43" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cityactivitybackground"
+    tools:context=".ui.CityActivity">
+
+    <TextView
+        android:id="@+id/insiderTextView"
+        android:layout_width="185dp"
+        android:layout_height="72dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="INSIDER"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/delhiImageView"
+        android:layout_width="0dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="2dp"
+        android:transitionName="delCityTransition"
+        app:layout_constraintBottom_toTopOf="@+id/hydImageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.49"
+        app:srcCompat="@drawable/delhi" />
+
+    <ImageView
+        android:id="@+id/mumbaiImageView"
+        android:layout_width="0dp"
+        android:layout_height="163dp"
+        android:transitionName="mumCityTransition"
+        app:layout_constraintBottom_toTopOf="@+id/hydImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/mumbai" />
+
+    <ImageView
+        android:id="@+id/hydImageView"
+        android:layout_width="0dp"
+        android:layout_height="163dp"
+        android:transitionName="hydCityTransition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mumbaiImageView"
+        app:layout_constraintStart_toEndOf="@+id/delhiImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79"
+        app:srcCompat="@drawable/hyderabad" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_city"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/hydImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delhi"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/delhiImageView"
+        app:layout_constraintStart_toStartOf="@+id/delhiImageView"
+        app:layout_constraintTop_toBottomOf="@+id/delhiImageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mumbai"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/mumbaiImageView"
+        app:layout_constraintStart_toStartOf="@+id/mumbaiImageView"
+        app:layout_constraintTop_toBottomOf="@+id/mumbaiImageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyderabad"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/hydImageView"
+        app:layout_constraintStart_toStartOf="@+id/hydImageView"
+        app:layout_constraintTop_toBottomOf="@+id/hydImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
